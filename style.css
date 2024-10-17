@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #2596be;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b10000;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px; /* Adjusted for fixed navbar height */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+input, textarea, button, select {
+    display: block;
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+    border-color: #2596be;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-button.active {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+.pagination-button.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    input, textarea, button, select {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
